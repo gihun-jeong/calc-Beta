@@ -14,7 +14,7 @@ body {
   padding-top: 2rem;
 
     /* ✅ 화면 넘침 방지 */
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .app, .result {
