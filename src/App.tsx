@@ -179,6 +179,15 @@ export default function App() {
   if (!started) {
     return (
       <div className="app">
+          <div style={{ marginTop: "2rem" }}>
+          <ins className="kakao_ad_area"
+            style={{ display: "none" }}
+            data-ad-unit="DAN-NxniNkRvJBowHxxe"
+            data-ad-width="320"
+            data-ad-height="100"
+          ></ins>
+          <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        </div>
         <h3>소개받기 전에 매물점수 부터 보자!!</h3>
         <h1>📈매물 계산기📉</h1>
         <input
@@ -281,6 +290,15 @@ export default function App() {
         >
           다시 평가하기
         </button>
+        <div style={{ marginTop: "2rem" }}>
+          <ins className="kakao_ad_area"
+            style={{ display: "none" }}
+            data-ad-unit="DAN-NxniNkRvJBowHxxe"
+            data-ad-width="320"
+            data-ad-height="100"
+          ></ins>
+          <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        </div>
       </div>
     );
   }
