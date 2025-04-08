@@ -229,7 +229,7 @@ export default function App() {
     return (
       <div className="result">
         <div ref={resultRef}>
-          <h2>평가자 {evaluator}님이 평가 결과</h2>
+          <h2>{evaluator}님의 평가 결과</h2>
           <h1>
             {target}의 매물 점수는 {totalScore}점입니다!
           </h1>
@@ -276,7 +276,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <h2>대상자: {target} ({gender})</h2>
+      {/* <h2>대상자: {target} ({gender})</h2> */}
       {questions.map((q, idx) => (
         <div key={idx} className="slider-container">
           {/* {const images = gender === "남성" ? q.maleImages : q.femaleImages;
