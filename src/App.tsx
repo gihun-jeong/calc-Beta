@@ -276,35 +276,33 @@ export default function App() {
 
   return (
     <div className="app">
-      {/* <h2>대상자: {target} ({gender})</h2> */}
-      {questions.map((q, idx) => {
-        const images = gender === '남성' ? q.maleImages : q.femaleImages;
-        return (
-          <div key={idx} className="slider-container">
-            {images && (
-              <img
-                src={images[scores[idx] - 1]}
-                alt={`${q.title} 예시`}
-                className="question-image"
-              />
-            )}
-            <label>{q.title}</label>
-            <small>{q.description}</small>
-            <input
-              type="range"
-              min="1"
-              max="5"
-              value={scores[idx]}
-              onChange={(e) => {
-                const newScores = [...scores];
-                newScores[idx] = parseInt(e.target.value);
-                setScores(newScores);
-              }}
+      <h2>대상자: {target} ({gender})</h2>
+      {questions.map((q, idx) => (
+        <div key={idx} className="slider-container">
+          {/* {const images = gender === "남성" ? q.maleImages : q.femaleImages;
+          images && (
+            <img
+              src={images[scores[idx] - 1]}
+              alt={`${q.title} 예시`}
+              className="question-image"
             />
-            <div>{scores[idx]}점</div>
-          </div>
-        );
-      })}
+          )} */}
+          <label>{q.title}</label>
+          <small>{q.description}</small>
+          <input
+            type="range"
+            min="1"
+            max="5"
+            value={scores[idx]}
+            onChange={(e) => {
+              const newScores = [...scores];
+              newScores[idx] = parseInt(e.target.value);
+              setScores(newScores);
+            }}
+          />
+          <div>{scores[idx]}점</div>
+        </div>
+      ))}
       <button onClick={() => setSubmitted(true)}>결과 보기</button>
     </div>
   );
