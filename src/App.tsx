@@ -229,7 +229,7 @@ export default function App() {
     return (
       <div className="result">
         <div ref={resultRef}>
-          <h2>평가자 {evaluator}님이 판단한 결과</h2>
+          <h2>평가자 {evaluator}님이 평가 결과</h2>
           <h1>
             {target}의 매물 점수는 {totalScore}점입니다!
           </h1>

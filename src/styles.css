@@ -12,16 +12,20 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding-top: 2rem;
+
+    /* ✅ 화면 넘침 방지 */
+    overflow-x: hidden;
 }
 
 .app, .result {
   background: white;
   color: #000;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
   width: 100%;
+  max-width: 480px; /* ✅ 모바일 친화적 너비 제한 */
+  box-sizing: border-box;
 }
 
 input[type="text"] {
