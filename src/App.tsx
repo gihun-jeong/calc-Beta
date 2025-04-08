@@ -222,6 +222,15 @@ export default function App() {
         >
           설문 시작하기
         </button>
+        <div style={{ marginTop: "2rem" }}>
+          <ins className="kakao_ad_area"
+            style={{ display: "none" }}
+            data-ad-unit="DAN-NxniNkRvJBowHxxe"
+            data-ad-width="320"
+            data-ad-height="100"
+          ></ins>
+          <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        </div>
       </div>
     );
   }
@@ -251,12 +260,14 @@ export default function App() {
           <button onClick={shareResult}>결과 공유하기</button>
           <button onClick={downloadImage}>이미지 저장</button>
         </div>
-        <div style={{ marginTop: '2rem' }}>
-          <iframe
-            title="adfit"
-            src="https://ads-partners.kakao.com/media-banner-script?slot=YOUR_SLOT_ID"
-            style={{ width: '100%', height: '100px', border: 'none' }}
-          ></iframe>
+        <div style={{ marginTop: "2rem" }}>
+          <ins className="kakao_ad_area"
+            style={{ display: "none" }}
+            data-ad-unit="DAN-NxniNkRvJBowHxxe"
+            data-ad-width="320"
+            data-ad-height="100"
+          ></ins>
+          <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
         </div>
         <button
           onClick={() => {
